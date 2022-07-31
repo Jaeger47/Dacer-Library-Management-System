@@ -1,4 +1,5 @@
-#[LIBRARY MANANGEMENT SYSTEM]
+# [LIBRARY MANANGEMENT SYSTEM]
+
 Program by: Mark Daniel G. Dacer
 
 Install: 
