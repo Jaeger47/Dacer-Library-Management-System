@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{71C4C4FE-3305-4DAE-8CCA-12CE471C33A4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ADMIN_SAMPLE1.My.MyApplication</StartupObject>
+    <RootNamespace>ADMIN_SAMPLE1</RootNamespace>
+    <AssemblyName>ADMIN_SAMPLE1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ADMIN_SAMPLE1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ADMIN_SAMPLE1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\Bunifu\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BookAdd.Designer.vb">
+      <DependentUpon>BookAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookBorrow.Designer.vb">
+      <DependentUpon>BookBorrow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookBorrow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookRemove.Designer.vb">
+      <DependentUpon>BookRemove.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookRemove.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookReturn.Designer.vb">
+      <DependentUpon>BookReturn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookReturn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookUpdate.Designer.vb">
+      <DependentUpon>BookUpdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookView.Designer.vb">
+      <DependentUpon>BookView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookRemoveCopy.Designer.vb">
+      <DependentUpon>BookRemoveCopy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookRemoveCopy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookRemoveCopyCon.Designer.vb">
+      <DependentUpon>BookRemoveCopyCon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookRemoveCopyCon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookBorrowCon.Designer.vb">
+      <DependentUpon>BookBorrowCon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookBorrowCon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookReturnCon.Designer.vb">
+      <DependentUpon>BookReturnCon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookReturnCon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="removemain.Designer.vb">
+      <DependentUpon>removemain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="removemain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberView.Designer.vb">
+      <DependentUpon>MemberView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MemberView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListBooks.Designer.vb">
+      <DependentUpon>ListBooks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListBooks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListIssue.Designer.vb">
+      <DependentUpon>ListIssue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListIssue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListMembers.Designer.vb">
+      <DependentUpon>ListMembers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListMembers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberAdd.Designer.vb">
+      <DependentUpon>MemberAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MemberAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberRemove.Designer.vb">
+      <DependentUpon>MemberRemove.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MemberRemove.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberUpdate.Designer.vb">
+      <DependentUpon>MemberUpdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MemberUpdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="variables.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BookAdd.resx">
+      <DependentUpon>BookAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookBorrow.resx">
+      <DependentUpon>BookBorrow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookRemove.resx">
+      <DependentUpon>BookRemove.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookReturn.resx">
+      <DependentUpon>BookReturn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookUpdate.resx">
+      <DependentUpon>BookUpdate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookView.resx">
+      <DependentUpon>BookView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookRemoveCopy.resx">
+      <DependentUpon>BookRemoveCopy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookRemoveCopyCon.resx">
+      <DependentUpon>BookRemoveCopyCon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookBorrowCon.resx">
+      <DependentUpon>BookBorrowCon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookReturnCon.resx">
+      <DependentUpon>BookReturnCon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="removemain.resx">
+      <DependentUpon>removemain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberView.resx">
+      <DependentUpon>MemberView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListBooks.resx">
+      <DependentUpon>ListBooks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListIssue.resx">
+      <DependentUpon>ListIssue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListMembers.resx">
+      <DependentUpon>ListMembers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberAdd.resx">
+      <DependentUpon>MemberAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberRemove.resx">
+      <DependentUpon>MemberRemove.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberUpdate.resx">
+      <DependentUpon>MemberUpdate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
