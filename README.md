@@ -15,4 +15,6 @@ VB.net 2010: https://drive.google.com/file/d/1Ae16ai32OdBEBEG-wuLP6twV4iWxM-MB/v
 How to import mysql database file: https://www.youtube.com/watch?v=2ynKAAt1G4Y
 
 
-
+Screenshots:
+![1](Screenshots/1.PNG)
+![2](Screenshots/2.PNG)
